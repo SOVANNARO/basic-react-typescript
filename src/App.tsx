@@ -25,6 +25,7 @@ import { Text } from "./components/polymorphic/Text";
 import { UseStateObject } from "./components/hook/UseStateObject";
 import { UseStateArray } from "./components/hook/UseStateArray";
 import { ConditionRunEffects } from "./components/hook/ConditionRunEffects";
+import { ComponentMain } from "./components/hook/useContext/ComponetMain";
 
 function App() {
 
@@ -79,10 +80,15 @@ function App() {
                     </Text>
                 </div>
             </div>
-            <div>
-                <UseStateObject />
-                <UseStateArray />
-                <ConditionRunEffects />
+            <div style={{display: 'flex'}}>
+                <div>
+                    <UseStateObject />
+                    <UseStateArray />
+                    <ConditionRunEffects />
+                </div>
+                <div style={{paddingLeft: '40px'}}>
+                    <ComponentMain />
+                </div>
             </div>
         </div>
     );

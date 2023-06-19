@@ -1,5 +1,4 @@
-import React, { useContext, useState } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import React from "react";
 
 type TextOwnProps<E extends React.ElementType> = {
 	as?: E;
@@ -19,8 +18,6 @@ export const Text = <E extends React.ElementType = 'div'>({
 	as,
 	isHeading = true
 }: TextProps<E>) => {
-
-	const theme = useContext(ThemeContext);
 
 	const Component = as || 'div';
 
