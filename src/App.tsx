@@ -22,10 +22,11 @@ import { Toast } from "./components/templateliterals/Toast";
 import { ButtonCustom } from "./components/html/Button";
 import { CustomComponent } from "./components/html/CustomComponent";
 import { Text } from "./components/polymorphic/Text";
-import { UseStateObject } from "./components/hook/UseStateObject";
-import { UseStateArray } from "./components/hook/UseStateArray";
-import { ConditionRunEffects } from "./components/hook/ConditionRunEffects";
+import { UseStateObject } from "./components/hook/useState/UseStateObject";
+import { UseStateArray } from "./components/hook/useState/UseStateArray";
+import { ConditionRunEffects } from "./components/hook/useEffect/ConditionRunEffects";
 import { ComponentMain } from "./components/hook/useContext/ComponetMain";
+import { FetchById } from "./components/hook/useEffect/FetchById";
 
 function App() {
 
@@ -85,6 +86,7 @@ function App() {
                     <UseStateObject />
                     <UseStateArray />
                     <ConditionRunEffects />
+                    <FetchById />
                 </div>
                 <div style={{paddingLeft: '40px'}}>
                     <ComponentMain />
